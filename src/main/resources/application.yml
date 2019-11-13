@@ -1,0 +1,28 @@
+spring:
+  # 数据库
+  flyway:
+    enabled: false
+    encoding: utf-8
+    baseline-on-migrate: true
+  # 数据关系映射
+  jpa:
+    properties:
+      hibernate:
+        naming:
+          physical-strategy: org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy
+        ddl-auto: update
+        show_sql: true
+        format_sql: true
+    database: h2
+    generate-ddl: true
+
+  datasource:
+    url: jdbc:h2:~/demo
+    driver-class-name: org.h2.Driver
+    username: foo
+    password: 123456
+
+  h2:
+    console:
+      path: /h2-console
+      enabled: true
