@@ -1,2 +1,2 @@
-# jpa-querydsl-dyp-demo
+# jpa-querydsl-dyp
 演示
